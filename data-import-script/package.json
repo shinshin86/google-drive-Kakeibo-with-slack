@@ -1,0 +1,23 @@
+{
+  "scripts": {
+    "db:init": "sequelize init",
+    "db:create": "sequelize db:create --env",
+    "db:migrate": "sequelize db:migrate --env",
+    "db:seed": "sequelize db:seed:all --env",
+    "db:model:gen": "sequelize model:generate",
+    "db:seed:gen": "sequelize seed:generate",
+    "fmt": "prettier --write **/*.js"
+  },
+  "dependencies": {
+    "csvtojson": "^2.0.8",
+    "mysql2": "^1.6.1",
+    "sequelize": "^4.38.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2",
+    "sequelize-cli": "^4.0.0"
+  },
+  "prettier": {
+    "singleQuote": true
+  }
+}
